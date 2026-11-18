@@ -8,7 +8,6 @@ import { rerunRules } from './rules'
 import { clearTransactions, deleteCard, deleteImportBatch } from './cleanup'
 import { appendWhere, buildTxnWhere, fetchCardholderSpend, fetchTransactionsForExport, TXN_SORT_EXPRESSIONS } from './query'
 import { buildCsv, buildDashboardFileName, buildExportFileName, buildReportFileName, buildXlsx } from './export'
-import { checkForUpdates } from './updater'
 import {
   ASSIGNMENT_FORMAT,
   ASSIGNMENT_VERSION,
@@ -657,5 +656,4 @@ export function registerIpcHandlers(): void {
 
   // app metadata
   handle('app.version', () => app.getVersion())
-  handle('updates.check', () => checkForUpdates(BrowserWindow.getFocusedWindow()))
 }

@@ -143,16 +143,6 @@ export interface DashboardExportResult {
   path: string
 }
 
-/** Outcome of a manual "Check for updates" run, surfaced in Settings. */
-export interface UpdateStatus {
-  state: 'unsupported' | 'up-to-date' | 'available' | 'downloaded' | 'declined' | 'error'
-  /** The version currently running. */
-  version: string
-  /** The newer version found on GitHub, when one exists. */
-  latestVersion?: string
-  message: string
-}
-
 export interface ImportBatch {
   id: number
   card_id: number

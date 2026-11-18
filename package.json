@@ -18,15 +18,12 @@
     "postinstall": "npm run rebuild",
     "selftest": "npm run build && electron . --selftest",
     "dist": "electron-vite build && electron-builder --win",
-    "dist:mac": "electron-vite build && electron-builder --mac",
-    "release": "electron-vite build && electron-builder --win --publish always",
-    "release:mac": "electron-vite build && electron-builder --mac --publish always"
+    "dist:mac": "electron-vite build && electron-builder --mac"
   },
   "build": {
     "appId": "com.andytorresjr.expense-tracker",
     "productName": "Expense Tracker",
     "npmRebuild": false,
-    "detectUpdateChannel": false,
     "files": [
       "out/**"
     ],
@@ -58,18 +55,10 @@
           "arch": ["arm64", "x64"]
         }
       ]
-    },
-    "publish": [
-      {
-        "provider": "github",
-        "owner": "andytorresjr",
-        "repo": "expense-tracker"
-      }
-    ]
+    }
   },
   "dependencies": {
     "better-sqlite3": "^12.10.0",
-    "electron-updater": "^6.8.9",
     "papaparse": "^5.5.3",
     "pdfjs-dist": "5.4.296",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"

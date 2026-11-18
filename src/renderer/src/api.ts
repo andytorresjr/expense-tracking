@@ -34,7 +34,6 @@ import type {
   TransactionClearRequest,
   TransactionDeleteResult,
   Txn,
-  UpdateStatus,
   TxnFilters,
   TxnPage
 } from '@shared/types'
@@ -152,9 +151,6 @@ export const api = {
   },
   app: {
     version: () => call<string>('app.version')
-  },
-  updates: {
-    check: () => call<UpdateStatus>('updates.check')
   }
 }
 

@@ -11,7 +11,6 @@ A Windows desktop application for personal and business expense tracking. Import
 - **Duplicate detection** — prevents importing the same transactions twice
 - **PDF export** — formatted expense report
 - **Backup & restore** — one-click database backup and restore
-- **In-app updater** — Settings → Updates → Check for updates (checks GitHub, downloads with confirmation, restarts)
 - **Transaction clearing** — clear by date range or all transactions
 
 ## Stack
@@ -37,7 +36,7 @@ npm run build
 
 ## Distribution
 
-Packaged as a Windows installer (`.exe`) and portable build. The in-app updater checks the GitHub releases page for newer versions and accepts pre-release (`-beta`) builds on beta installs.
+Packaged as a Windows installer (`.exe`) and portable build with `npm run dist` (macOS: `npm run dist:mac`). Builds are distributed manually; the app has no auto-updater and never checks for updates online.
 
 ## Transaction Types
 

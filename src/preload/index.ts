@@ -57,8 +57,7 @@ const CHANNELS = new Set([
   'recon.reject',
   'recon.ledger',
   'recon.unmatchedCharges',
-  'app.version',
-  'updates.check'
+  'app.version'
 ])
 
 contextBridge.exposeInMainWorld('api', {

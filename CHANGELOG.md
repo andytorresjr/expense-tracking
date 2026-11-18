@@ -1,8 +1,9 @@
 # Changelog
 
-All notable changes to Expense Tracker. The same notes appear on each
-[GitHub release](https://github.com/andytorresjr/expense-tracker/releases), and the
-in-app updater shows them when a new version is found.
+All notable changes to Expense Tracker.
+
+## Unreleased
+- Removed the in-app updater and GitHub release publishing. The app no longer makes any network request to check for updates; builds are distributed manually.
 
 ## 1.3.0-beta.6 — 2026-07-20
 - Quick Categorize: setting the business/personal type now advances to the next transaction, matching how category selection already behaves.
