@@ -4,9 +4,9 @@
   "description": "Local expense tracker for company card statements. Fully offline.",
   "main": "./out/main/index.js",
   "author": {
-    "name": "UNIMEX"
+    "name": "Andres Torres"
   },
-  "copyright": "Copyright © 2026 UNIMEX",
+  "copyright": "Copyright © 2026 Andres Torres",
   "private": true,
   "scripts": {
     "dev": "electron-vite dev",
@@ -23,7 +23,7 @@
     "release:mac": "electron-vite build && electron-builder --mac --publish always"
   },
   "build": {
-    "appId": "com.unimex.expense-tracker",
+    "appId": "com.andytorresjr.expense-tracker",
     "productName": "Expense Tracker",
     "npmRebuild": false,
     "detectUpdateChannel": false,

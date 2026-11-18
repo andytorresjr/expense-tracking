@@ -273,7 +273,7 @@ function ReconciliationSettings(): React.JSX.Element {
           <label className="block text-xs text-slate-500 mb-1">PO system URL</label>
           <input
             className="input w-full"
-            placeholder="https://po.unimexgroup.com"
+            placeholder="https://po.example.com"
             value={baseUrl}
             onChange={(e) => setBaseUrl(e.target.value)}
           />
